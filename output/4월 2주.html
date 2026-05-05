@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Malgun Gothic', 'Dotum', sans-serif; line-height: 1.6; color: #000; }
+        .bold { font-weight: bold; }
+        .section-header { font-weight: bold; margin-top: 2.5em; margin-bottom: 0.8em; }
+        .group-header { font-weight: bold; margin-top: 2em; margin-bottom: 0.5em; }
+        .main-task { margin-top: 0.5em; text-indent: 0; }
+        .sub-task { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="section-header"><b>[프로젝트]</b></div>
+    
+    <div class="group-header"><b>[퀵커머스 EGFM 구축]</b></div>
+    <div class="main-task"><b><u>1. EGFM 구축 예산 및 테스트 방안 협의 (PM:유희곤)</u></b></div>
+    <div class="sub-task">- 일부 점포 선오픈 불가 대응을 위해 영업시간 전후 테스트 및 더미점포 활용 방식 협의</div>
+    <div class="sub-task">- 앱 개발 포함 0.99억 예산 요청 및 통합테스트 수행 방안 소통</div>
+
+    <div class="section-header"><b>[과제]</b></div>
+    
+    <div class="group-header"><b>[정산 시스템 구축]</b></div>
+    <div class="main-task">1. [RCOS] 지점 온라인 쿠폰 정산 시스템 구축 (김휘수, 김동익)</div>
+    <div class="sub-task">- 쿠폰/배송비 자동정산 시스템 구축 관련 계약 진행 중</div>
+
+    <div class="group-header"><b>[이네스 모바일 기능 확대]</b></div>
+    <div class="main-task">2. 하이퍼정판율레포트 이네스 모바일 메뉴 추가 (유희곤)</div>
+    <div class="sub-task">- 모바일 가시성 확보를 위한 메뉴 추가 요청 대응(신규 집계 펑션 및 앱 개발 공수 5MD 산출)</div>
+
+    <div class="section-header"><b>[운영]</b></div>
+    
+    <div class="group-header"><b>[신규 기능 및 프로그램 개선]</b></div>
+    <div class="main-task">1. 무상사급 조회 프로그램 (ZMMR3440) 세금분류 필드 추가 (정상열)</div>
+    <div class="sub-task">- 가공품정보 상단 레이아웃 및 자재마스터 세금분류 필드 추가 보강</div>
+    <div class="main-task">2. BL 관리 '특혜 관세 포기 사유 확인서' 전자결재 연동 반영 (이동훈)</div>
+    <div class="sub-task">- 전자결재 승인 시 BL 정보 자동 업데이트 연동 로직 구현</div>
+    <div class="main-task">3. 유통재무 AI 도입 - 예외 상품코드 등록 프로그램 개발 (송정윤)</div>
+    <div class="sub-task">- 예외 상품 기반 자동 매출 이관 처리를 위한 ZSDR2465 프로그램 개발</div>
+    <div class="main-task">4. 유통재무 AI 도입 - 자동 매출 이관 처리 개선 (송정윤)</div>
+    <div class="sub-task">- 납품 문서 생성 및 빌링 일괄 처리 가능하도록 로직 개선 및 운영 반영</div>
+    <div class="main-task">5. 분배번호 변경/조회 프로그램 (ZLER0101) 수정 (신진욱)</div>
+    <div class="sub-task">- 현업 요청에 따른 납품생성일, 출고전기일 필드 추가 수정 중(ETASK-53015)</div>
+
+    <div class="group-header"><b>[현업 요청 및 프로세스 최적화]</b></div>
+    <div class="main-task">1. 의류 CU 기획 판매가 기반 예산관리 요청 피드백 (배성경)</div>
+    <div class="sub-task">- 원가가 아닌 기획단계 판매가 기반 예산관리 Needs에 따른 레포트 구현 가능성 검토</div>
+    <div class="main-task">2. 무역 MDP 포탈 계약 관련 요청사항 피드백 (배성경)</div>
+    <div class="sub-task">- 계약서 작성 이후 PO 수정 제한 필요성 및 계약서 승인 영향도 로직 확인</div>
+    <div class="main-task">3. 의류 동대문 직사입 아동 기준 KC 적용 대상 확대 (배성경)</div>
+    <div class="sub-task">- 아동 브랜드(더데이걸 등) 성인기준 KC 적용 가능하도록 프로그램 수정</div>
+    <div class="main-task">4. 생산의뢰서 등록 프로그램 수정 (이동훈)</div>
+    <div class="sub-task">- BP 기준통화(USD)와 상이한 위안화 자동입력 오류 수정 및 조직별 통화키 조회 제한</div>
+
+    <div class="group-header"><b>[시스템 장애 대응 및 유지보수]</b></div>
+    <div class="main-task">1. POG WEB 접속 오류 조치 (김휘수)</div>
+    <div class="sub-task">- 닐슨 측의 WEB 소스 변경 후 원복 미진행으로 발생한 접속 오류 해결 및 재발 방지 안내</div>
+    <div class="main-task">2. 물류비 계약 오류 수정 (김휘수)</div>
+    <div class="sub-task">- SAP BP 설정 오류(3월 계약이나 4월로 등록) 및 프로그램 내 하드코딩 제거 수정</div>
+    <div class="main-task">3. 자재상태에 따른 반품출고 처리 오류 수정 (신진욱)</div>
+    <div class="sub-task">- 자재상태 05(반품가능)임에도 반품문서 생성 오류 발생하는 로직 분석 및 조치</div>
+    <div class="main-task">4. 타계정 출고 문의 처리 (정상열)</div>
+    <div class="sub-task">- S/L 가용재고 부족으로 인한 처리 불가 원인 파악 및 조치</div>
+
+    <div class="group-header"><b>[상시 운영 지원 및 데이터 관리]</b></div>
+    <div class="main-task">1. 점직납 PO 수동 생성 지원 (정상열)</div>
+    <div class="sub-task">- PR→PO 미생성으로 인한 점직납 PO 수기 생성(ZME59) 지원</div>
+    <div class="main-task">2. PO 삭제 요청 처리 (정상열)</div>
+    <div class="sub-task">- 폐사업자 대상 발주 PO 삭제 가능 여부 확인 및 정상 삭제 처리 완료</div>
+    <div class="main-task">3. 모바일 이네스 지점 변경 로직 수정 예정 (김휘수)</div>
+    <div class="sub-task">- 과거 R106 분리 시절 공통코드 및 ENESS 내 CDS View 접근 로직 수정 진행</div>
+    <div class="main-task">4. 임대을 계약 구조 변경 모니터링 및 매출 검증 (송정윤)</div>
+    <div class="sub-task">- 온라인 판매분 코드 전환 모니터링 및 매출 예수금 처리 검증</div>
+    <div class="main-task">5. FCM 프로젝트 CAR 서버 데이터 생성 지원 (송정윤)</div>
+    <div class="sub-task">- CAR QAS 서버 데이터 검증을 위해 CAR 데이터 생성 프로그램 개발 및 테스트 지원</div>
+    <div class="main-task">6. 1NCP 중복구매그룹 매장 및 폐업 매장 삭제 (이정은)</div>
+    <div class="sub-task">- 관리 효율화를 위한 중복구매그룹 매장 및 폐업 매장 데이터 정리</div>
+    <div class="main-task">7. 2026년 03월 월마감 지원 (신진욱)</div>
+    <div class="sub-task">- 3월 월마감 관련 수불 대사 및 전표 처리 지원</div>
+</body>
+</html>

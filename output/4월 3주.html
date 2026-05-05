@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Malgun Gothic', 'Dotum', sans-serif; line-height: 1.6; color: #000; }
+        .section-header { font-weight: bold; margin-top: 2.5em; margin-bottom: 0.8em; }
+        .group-header { font-weight: bold; margin-top: 2em; margin-bottom: 0.5em; }
+        .main-task { margin-top: 0.5em; }
+        .sub-task { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="section-header"><b>[프로젝트]</b></div>
+    
+    <div class="group-header"><b>[퀵커머스 EGFM 구축]</b></div>
+    <div class="main-task"><b><u>1. 퀵커머스 EGFM 구축 및 테스트 (PM:유희곤)</u></b></div>
+    <div class="sub-task">- 8월 오픈 확정 및 상품마스터(340만건) 전송/비교 완료</div>
+    <div class="sub-task">- 재고/매출 RFC 인터페이스 테스트 및 대량 데이터(50만건) 부하 테스트를 통한 안정성 확보</div>
+    <div class="sub-task">- 배송완료 후 취소 건 이슈 논의 및 데이터 인터페이스 정합성 검증 완료</div>
+
+    <div class="section-header"><b>[과제]</b></div>
+    
+    <div class="group-header"><b>[정산 시스템 구축]</b></div>
+    <div class="main-task">1. [RCOS] 지점 온라인 쿠폰 정산 시스템 구축 (김휘수)</div>
+    <div class="sub-task">- 지점 온라인 안분 비율 등록 프로그램 및 I/F RFC 개발 중</div>
+    <div class="sub-task">- 정산액 레포트 및 엑셀 업로드 프로그램 개발 진행 중</div>
+
+    <div class="section-header"><b>[운영]</b></div>
+    
+    <div class="group-header"><b>[시스템 연동 및 권한 관리]</b></div>
+    <div class="main-task">1. ENESS 모바일 지점 설정 로직 변경 (김휘수)</div>
+    <div class="sub-task">- 기존 공통코드 고정 방식에서 탈피하여 HR 데이터 기반 지점 설정 로직으로 개선</div>
+    <div class="main-task">2. POG WEB 서버 - AP서버 연결 및 권한 부여 (김휘수)</div>
+    <div class="sub-task">- 시스템 연동을 위한 계정 생성, 권한 부여 및 방화벽 오픈 조치</div>
+
+    <div class="group-header"><b>[무역 및 대외 API 관리]</b></div>
+    <div class="main-task">1. 트레드링스 글로벌 API 변경 대응 (배성경)</div>
+    <div class="sub-task">- 로그인 주소 수정 및 글로벌 정책(imexTp 필드 제거) 대응 검토 완료(이상 없음)</div>
+    <div class="sub-task">- V3 버전 업 변경 API 상세 스펙 업체 요청 및 검토 진행 중</div>
+    <div class="main-task">2. 무역 MDP 포탈 계약 프로세스 고도화 (배성경)</div>
+    <div class="sub-task">- 계약서 존재 시 PO 수정 제어, 삭제 계약서 조회, Amend 메일 발송 기능 등 추가/수정 예정</div>
+
+    <div class="group-header"><b>[물류 및 마감 지원]</b></div>
+    <div class="main-task">1. 3월 판매보조용품 마감 및 전표 처리 지원 (송정윤)</div>
+    <div class="sub-task">- 빌링 취소 후속 전표(납품/출고취소) 처리 지원 및 BP 생성 오류/전표 잔액 정리</div>
+    <div class="main-task">2. 판매보조용품 주문 확정 프로그램 기능 추가 (송정윤)</div>
+    <div class="sub-task">- 재무팀 요청에 따라 매장 중간 관리자의 고객코드 확인 기능 반영 (ZSDR7120)</div>
+    <div class="main-task">3. EIS 시스템 매출 전송 오류 분석 (송정윤)</div>
+    <div class="sub-task">- 15일 발생한 EIS 시스템 일부 매출 전송 오류 데이터 원인 분석 및 대응</div>
+    <div class="main-task">4. 임대을 계약 구조 변경 관련 매출 이관 (송정윤)</div>
+    <div class="sub-task">- 계약 변경 전 판매분에 대한 매출 이관 처리 및 검증</div>
+
+    <div class="group-header"><b>[영업 및 재무 최적화]</b></div>
+    <div class="main-task">1. 킴스 이익율 관리 레포트 구축 미팅 (배성경)</div>
+    <div class="sub-task">- 물류장려금, 매입할인 등을 SKU에 반영하여 이익율을 모니터링하기 위한 레포트 생성 협의</div>
+    <div class="main-task">2. 강서점 NC픽스 특약매입 전환 교육 및 지원 (유희곤)</div>
+    <div class="sub-task">- 특약매입 전환 프로세스(상품/가격/수수료 등) 교육 및 88* EAN 코드 변경 지원</div>
+
+    <div class="group-header"><b>[데이터 관리 및 리포트 개선]</b></div>
+    <div class="main-task">1. AEO 위험관리 (ztsr1310) 조회 기능 강화 (이동훈)</div>
+    <div class="sub-task">- 신고번호 및 HS code 기준 조회 기능 추가 반영</div>
+    <div class="main-task">2. TT 자동전송 오류 원인 분석 및 조치 (이동훈)</div>
+    <div class="sub-task">- 특정 벤더 이메일 누락으로 인한 전표 전송 오류 분석 및 재처리 완료</div>
+    <div class="main-task">3. 자재그룹 신규 생성 및 변경 처리 (정상열)</div>
+    <div class="sub-task">- 자재그룹 3건 신규 생성 및 상품 자재그룹 16건 변경 관리</div>
+
+    <div class="group-header"><b>[프로그램 오류 수정 및 유지보수]</b></div>
+    <div class="main-task">1. 자재상태별 반품출고 처리 로직 수정 (신진욱)</div>
+    <div class="sub-task">- 자재상태 05(반품가능) 셋팅 시 발생하는 반품문서 생성 오류 Exit 수정 완료</div>
+    <div class="main-task">2. ZWMR0300 반품 처리 프로그램 필드 추가 (신진욱)</div>
+    <div class="sub-task">- 브랜드 관련 필드(오리지널 브랜드 등) 추가 및 기능 테스트 진행 중</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Malgun Gothic', 'Dotum', sans-serif; line-height: 1.6; color: #000; }
+        .bold { font-weight: bold; }
+        .section-header { font-weight: bold; margin-top: 2.5em; margin-bottom: 0.8em; }
+        .group-header { font-weight: bold; margin-top: 2em; margin-bottom: 0.5em; }
+        .main-task { margin-top: 0.5em; }
+        .sub-task { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="section-header"><b>[프로젝트]</b></div>
+    <div class="group-header"><b>[신규 서비스 구축]</b></div>
+    <div class="main-task"><b><u>1. 퀵커머스 EGFM 구축 (PM:유희곤)</u></b></div>
+    <div class="sub-task">- 유통 투심위 통과(4.22) 및 계약 진행</div>
+    <div class="sub-task">- PMO 대상 계약서, 착수보고서, 수익계산기 작성 및 전달 완료</div>
+    <div class="main-task"><b><u>2. [RCOS] 지점 온라인 쿠폰 정산 시스템 구축 (PM:김휘수)</u></b></div>
+    <div class="sub-task">- ENESS 안분 비율 등록, SAP 간 I/F RFC, 엑셀 업로드 및 정산액 레포트 프로그램 개발 완료</div>
+    <div class="sub-task">- 테스트 완료 및 4/24 기준 2개 점포 오픈 적용</div>
+
+    <div class="section-header"><b>[과제]</b></div>
+    <div class="group-header"><b>[시스템 연동 및 고도화]</b></div>
+    <div class="main-task">1. 트레드링스 API V3 변경 대응 작업 (배성경)</div>
+    <div class="sub-task">- API host 변경 후 기존 주소 트레킹 발생 이슈 대응 (지도 호출부 숨김 주소 변경 완료)</div>
+    <div class="sub-task">- API 상세스펙 영향도 검토 중 (CargoInfos_tracking 지원 종료 및 신규 제공 필드 간 매핑 정보 검토)</div>
+    <div class="main-task">2. 킴스 SKU단위 상품흐름 시스템 (배성경)</div>
+    <div class="sub-task">- 기존 물류장려금 집계 및 배분 프로그램 검토 및 신규 프로그램 설계 진행 중</div>
+
+    <div class="section-header"><b>[운영]</b></div>
+    <div class="group-header"><b>[시스템 장애 대응 및 권한 관리]</b></div>
+    <div class="main-task">1. 발주 스탠다드 체크로직에 의한 발주 불가 해결 (김휘수)</div>
+    <div class="sub-task">- 4/21 배포된 EXIT 수정사항 06 자재 상태 발주 불가 오류 발생. 해당 로직 삭제 및 긴급 배포 조치 완료</div>
+    <div class="sub-task">- 해당 시간대 축산/수산 발주 CUT-OFF 9:30 연장 및 배치 시간 9:40 변경</div>
+    <div class="main-task">2. ENESS 로그인 오류 (김휘수)</div>
+    <div class="sub-task">- 신규 사번 취득 후 통합계정 내 업데이트 및 I/F 오류 발생. 통합계정 업데이트 요청 및 조치 완료</div>
+    <div class="main-task">3. ENESS CU 권한 문의 (김휘수)</div>
+    <div class="sub-task">- 직종 변경에 따른 CU 코드 제거 및 전자결재를 통한 권한 부여 프로세스 안내</div>
+
+    <div class="group-header"><b>[영업 및 재무 지원]</b></div>
+    <div class="main-task">1. 유상사급 프로그램 관련 미팅 (김동익, 배성경)</div>
+    <div class="sub-task">- SIO, FCM 등 유관 부서 대상 유상사급 요청사항 및 시스템 가능 여부 협의</div>
+    <div class="sub-task">- 이츠 시스템 유상사급 내역 및 재무팀 수기관리 현황(매출/매입 전표) 검토</div>
+    <div class="main-task">2. 물대 IV 메일링 결제방법 수정 (배성경)</div>
+    <div class="sub-task">- B/L 결제 지급방법 변경에 따른 IV 메일링 내용 오기재 오류 수정</div>
+    <div class="main-task">3. 임대을 계약 구조 변경 (송정윤)</div>
+    <div class="sub-task">- 임대을 코드 계약 변경 전 판매분 코드 매출 이관 처리</div>
+    <div class="main-task">4. ZSDR1411-판매가이력조회(전자결재용) 프로그램 기능 수정 (송정윤)</div>
+    <div class="sub-task">- 사용자 편의 및 데이터 정합성 보완 목적 실제 가격 변동 이력 유효 데이터 위주 조회/다운로드 최적화</div>
+    <div class="main-task">5. ZSDR2463-[SD] 자동 매출이관 (송정윤)</div>
+    <div class="sub-task">- 수수료 구간별 매출 이관 자동화 프로그램 고도화 및 결산 효율 증대 목적 오아시스/애슐리 매출 이관 로직 수정 (세금 분류 및 단위 필드 추가)</div>
+    <div class="main-task">6. 납품 문서 출고 후 빌링 미처리 건 점검 및 조치 (송정윤)</div>
+    <div class="sub-task">- 출고 후 청구 프로세스 지연 건 모니터링 및 결산 지연 방지 목적 빌링 처리 독려. 판매처별 데이터 정합성 검토 완료</div>
+</body>
+</html>
