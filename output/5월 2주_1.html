@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Malgun Gothic', 'Dotum', sans-serif; line-height: 1.6; color: #000; }
+        .bold { font-weight: bold; }
+        .section-header { font-weight: bold; margin-top: 2.5em; margin-bottom: 0.8em; }
+        .group-header { font-weight: bold; margin-top: 2em; margin-bottom: 0.5em; }
+        .main-task { margin-top: 0.5em; }
+        .sub-task { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="section-header"><b>[과제]</b></div>
+    <div class="group-header"><b>[물류 및 상품 관리]</b></div>
+    <div class="main-task"><u><b>1. 트레드링스 API V3 변경 대응 작업 (배성경)</b></u></div>
+    <div class="sub-task">- 미지원 14개 필드 대체 필드 및 별도 목록 확인 완료</div>
+    <div class="sub-task">- 적용 진행 중 (진척률 30%)</div>
+
+    <div class="main-task"><u><b>2. 킴스 SKU단위 상품흐름 시스템 (배성경)</b></u></div>
+    <div class="sub-task">- 개발 완료 및 테스트 진행 중</div>
+    <div class="sub-task">- 수익계산기 작성 및 PM 전달</div>
+
+    <div class="main-task"><u><b>3. 무역 MDP 포탈 계약 프로세스 추가 요청사항 (배성경)</b></u></div>
+    <div class="sub-task">- 프로그램 수정 설계 완료</div>
+    <div class="sub-task">- 생산종합관리(zppr1150): 계약서 존재 시 PO 수량/단가 수정 불가 제한 로직 추가</div>
+    <div class="sub-task">- 무역의뢰서(ztsr0110): 기존 계약 관련 결제 프로세스 제거</div>
+
+    <div class="group-header"><b>[정산 시스템]</b></div>
+    <div class="main-task"><u><b>4. RCOS 지점 온라인 쿠폰 및 배송비 정산 시스템 구축 (김휘수)</b></u></div>
+    <div class="sub-task">- RPA 팀 미팅 진행 (5/6)</div>
+    <div class="sub-task">- 반품 건 포함 데이터 수신 결정 (반품 상세 사유, 상품주문번호 포함)</div>
+    <div class="sub-task">- 쿠폰/배송비 정상/배송비 반품 3개 화면 분리 개발 합의</div>
+    <div class="sub-task">- 쿠폰 정산 금액 조회 프로그램 수정 진행 중</div>
+    <div class="sub-task">- 배송비 정산 데이터 업로드 및 조회 프로그램 개발 진행 중</div>
+
+    <div class="section-header"><b>[운영]</b></div>
+    <div class="group-header"><b>[무역 및 수출입]</b></div>
+    <div class="main-task">1. 무역 AEO 인증 평가 자료 검토 (배성경)</div>
+    <div class="sub-task">- 전년도 제출자료 변경 부분 업데이트 후 현업 제공</div>
+
+    <div class="main-task">2. 무역 입고 전표 변경 여부 문의 대응 (정상열)</div>
+    <div class="sub-task">- 해외 입고 건 국내 입고 시 GRIR 전표 처리 변경 불가 안내</div>
+
+    <div class="group-header"><b>[생산 및 제조 관리]</b></div>
+    <div class="main-task">3. 하이퍼 직사입 제조 IV / 장려금 결산 (정상열)</div>
+    <div class="sub-task">- IV 단가차이 오류 건 조치</div>
+
+    <div class="main-task">4. 생산오더 입고 오류 문의 대응 (정상열)</div>
+    <div class="sub-task">- 결판가 미확정에 따른 입고 오류 원인 안내</div>
+
+    <div class="main-task">5. 결판가 의뢰 오류 조치 (정상열)</div>
+    <div class="sub-task">- 제조간접비 계산 오류 및 생산오더 BOM 싱크 불일치 재처리</div>
+
+    <div class="main-task">6. 결판가 확정 오류 조치 (정상열)</div>
+    <div class="sub-task">- 확정 취소 시 ZTPP1151 테이블 업데이트 누락에 따른 재처리 불가 오류 발생</div>
+    <div class="sub-task">- 테이블 데이터 수정 후 재처리 완료</div>
+
+    <div class="group-header"><b>[구매 및 자재 관리]</b></div>
+    <div class="main-task">7. 원부자재 입고 오류 문의 대응 (정상열)</div>
+    <div class="sub-task">- 하도급 계약 확정 미처리에 따른 EDI 벤더 미승인 원인 안내</div>
+
+    <div class="main-task">8. MDP 디패킹 리스트 조회 오류 대응 (정상열)</div>
+    <div class="sub-task">- 재질 필드 표기 오류 확인, FTA 사전 설계판 재질 정보 등록 오류 원인 파악</div>
+
+    <div class="group-header"><b>[정산 및 매출 관리]</b></div>
+    <div class="main-task">9. 팜앤푸드-이츠 결산 지원 (김휘수)</div>
+    <div class="sub-task">- 차이내역 분석 및 조치사항 안내</div>
+    <div class="sub-task">- SAP 조치 가능 데이터 추가 조치</div>
+
+    <div class="main-task">10. 팜앤푸드-이츠 단가 이상 확인 (김휘수)</div>
+    <div class="sub-task">- 가격 변경 이전 PO 생성 건 확인</div>
+    <div class="sub-task">- 팜앤푸드-이츠 연동 프로세스 안내</div>
+
+    <div class="main-task">11. F1 실벤더 미전송 사유 확인 (김휘수)</div>
+    <div class="sub-task">- EDI 계약 미완료에 따른 미전송 원인 확인</div>
+    <div class="sub-task">- 계약 이후 미래 일자에 대한 구매가/판매가 설정 불가 안내</div>
+
+    <div class="main-task">12. ENESS BI 권한 요청 대응 (김휘수)</div>
+    <div class="sub-task">- CU코드 기반 권한 부여 처리</div>
+
+    <div class="main-task">13. EIS 반품 승인 확인 (김휘수)</div>
+    <div class="sub-task">- 반품 완료 자재 현황 확인 및 SAP→EIS 반품 프로세스 안내</div>
+
+    <div class="main-task">14. 분당점 특약매입 거래업체 변경에 따른 CO-PA 데이터 보정 (송정윤)</div>
+    <div class="sub-task">- 구매처 코드 오등록(126091→236949)으로 인한 시스템 간 데이터 정합성 불일치 조치</div>
+    <div class="sub-task">- CO-PA 수익성 분석 테이블(CE1E000) 대금청구 문서 분석 및 공급업체 정보 변경</div>
+
+    <div class="main-task">15. 하이마트 임대을 매출 수수료 오등록분 정정 및 재처리 (송정윤)</div>
+    <div class="sub-task">- 구매처/수수료율 착오 등록 매출 취소 및 재처리</div>
+    <div class="sub-task">- 수수료율 2.5%(구매처 21530) → 4.5%(구매처 21521) 정정, 매출 약 4억 8,600만 원 재처리</div>
+    <div class="sub-task">- 임대을 예수금 대체 전표 작성 및 검증 완료 (전표번호: 2200000550, 2200000551)</div>
+
+    <div class="main-task">16. 4월 정산 지원 (송정윤)</div>
+    <div class="sub-task">- 이랜드몰 7601 4월 매출/재고 출고 수량 처리 및 검증</div>
+    <div class="sub-task">- 이몰 판매분 매출 검증 및 재처리</div>
+    <div class="sub-task">- 대리점 추정 분실 미처리 검증 및 처리</div>
+    <div class="sub-task">- 특약매입 정산 금액 검증 및 처리</div>
+
+    <div class="group-header"><b>[시스템 개선]</b></div>
+    <div class="main-task">17. ZSDR8795 특약매입 POS 매출조회 공급업체원가 계산 로직 수정 (송정윤)</div>
+    <div class="sub-task">- 부가세/수수료 차감 방식 오류 확인, 매입액 기준 신규 계산식[정가/1.1*(1-수수료율)] 적용</div>
+
+    <div class="main-task">18. 4월 판매보조용품 마감 처리 지원 (송정윤)</div>
+    <div class="sub-task">- 빌링 취소 후 후속 납품 문서 출고 취소 미처리 건 확인 및 처리 지원</div>
+
+    <div class="main-task">19. ZSDR5500 하이퍼 매출정산 매출 요청서 양식 변경 (이정은)</div>
+    <div class="sub-task">- 매출 요청서 양식 변경 반영</div>
+
+    <div class="main-task">20. C* 플랜트 회전 물류 및 저장위치 공통코드 수정 (유희곤)</div>
+    <div class="sub-task">- CC > CC20 저장위치 코드 변경 (1701 → 1101) 반영</div>
+</body>
+</html>
